@@ -5,6 +5,7 @@
 **[[MASTER-PRODUCTS-LIST|MASTER PRODUCTS LIST]]** — Complete list of pre-selected products with ready-to-use affiliate links
 
 This file contains ~50 curated products optimized for inteles.ro content:
+
 - Books (Jung, Freud, dream dictionaries)
 - Sleep supplements (magnesium, melatonin, herbal teas)
 - Energy products (Manuka honey)
@@ -13,6 +14,7 @@ This file contains ~50 curated products optimized for inteles.ro content:
 - Wellness & beauty
 
 **How to use:**
+
 1. Open MASTER-PRODUCTS-LIST.md
 2. Scan the categories that match your article topic
 3. Pick 1-2 best-fit products

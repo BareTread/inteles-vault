@@ -29,9 +29,9 @@ Scop: listă scurtă cu comercianți activi, comisioane, cele mai potrivite topi
 ## Link building (quicklink)
 
 Format general:
+
 ```
 https://event.2performant.com/events/click?ad_type=quicklink&aff_code=80f42fe2f&unique=[tag]&redirect_to=[URL_ENCODED]
 ```
 
 Notă: encodează URL-urile produselor; păstrează fișierul [[04-Monetization/Affiliate-Links-Quicklist]] ca sursă rapidă.
-

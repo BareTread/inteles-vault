@@ -511,6 +511,21 @@ Each link in this chain compounds:
 
 ---
 
+## 🖼️ Imagini (Pexels → WebP Unice)
+
+**Scop:** imagini premium, relevante, optimizate SEO, cu unicitate subtilă.
+
+- Caută 3–6 imagini Pexels (landscape, ton natural, compoziție clară); alege 2–4.
+- Rulează pipeline-ul (automat):
+  `python scripts/images/pexels_pipeline.py --query "[tema]" --per 6 --pick 4 --topic "[context RO]" --slug a[POSTID]-[slug] --out-dir 10-Assets/pexels`
+- Ce face pipeline-ul:
+  - Standardizează dimensiuni: hero 1200x675, inline 1200x800, square 1200x1200
+  - Re-encode WebP (fără EXIF) + micro-variații (contrast/bright/rotate subtile) pentru unicitate percepută
+  - Generează manifest JSON cu alt (RO) + caption (credit fotograf)
+- Încarcă în WordPress folosind manifestul (title/alt/caption); plasează imaginile doar unde cresc claritatea/valoarea.
+
+---
+
 ## 📚 Key Resources (Load These)
 
 **For Writing:**

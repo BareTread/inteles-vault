@@ -113,6 +113,15 @@ Load these files in order:
 
 ---
 
+## 🖼️ Images (Pexels → WebP)
+
+- Find 3–6 Pexels images; pick 2–4 (landscape, natural tone, clear composition)
+- Run pipeline (auto standardize + unique WebP + manifest):
+  `python scripts/images/pexels_pipeline.py --query "[tema]" --per 6 --pick 4 --topic "[context RO]" --slug a[POSTID]-[slug] --out-dir 10-Assets/pexels`
+- Use the generated manifest for WordPress alt/caption; place images only where they add clarity.
+
+---
+
 ## 📁 Key Files Reference
 
 | File | Purpose | Load Priority |
@@ -122,7 +131,7 @@ Load these files in order:
 | **00-AGENT-CONTEXT/05-AI-AGENT-PROMPTS.md** | Ready templates | ⭐ CRITICAL |
 | **04-Monetization/MASTER-PRODUCTS-LIST.md** | Affiliate products | ⭐ CRITICAL |
 | **00-AGENT-CONTEXT/02-WRITING-RUBRIC.md** | 10-point checklist | HIGH |
-| **SOP-INTeles.ro-Content-Operations.md** | Full SOP | REFERENCE |
+| **SOP.md** | Full SOP (philosophy) | REFERENCE |
 | **07-Templates/** | HTML components | AS NEEDED |
 | **03-MCP-Operations/** | WordPress/Pexels | AS NEEDED |
 

@@ -8,12 +8,12 @@ Scop: hub operațional pentru înteles.ro (strategie, scriere, MCP, imagini, mon
 
 ## ⚡ START RAPID
 
-- 🎯 SOP principal: [[06-Workflows/SOP-Content-Operations|SOP Content Operations]] • [[06-Workflows/SOP-INTeles.ro-Content-Operations|SOP (detaliat)]]
-- 📝 Creează acum un articol de vis: [[07-Templates/TPL-Vis-Interpretare]]
-- 🧩 Adaugă caseta de resurse (afiliat): [[07-Templates/HTML-Resource-Box]] • [[04-Monetization/Affiliate-Links-Quicklist|Links Quicklist]]
+- 🧠 Citește întâi: [[SOP|SOP — The Philosophy]]
+- 📝 Creează un articol: [[07-Templates/TPL-Vis-Interpretare]]
+- 🧩 Resurse afiliate: [[07-Templates/HTML-Resource-Box]] • ⭐ [[04-Monetization/MASTER-PRODUCTS-LIST|MASTER PRODUCTS LIST]]
 - 🖼️ Imagini Pexels + upload WP: [[03-MCP-Operations/MCP-Pexels-Workflow]]
-- 🔄 Actualizează un articol scurt: [[06-Workflows/Flux-Actualizare-Articol]]
-- 📊 Vezi pipeline-ul: [[09-Tracking/Article-Pipeline]]
+- 🔄 Actualizează un articol: [[06-Workflows/Flux-Actualizare-Articol]]
+- 📊 Pipeline: [[09-Tracking/Article-Pipeline]]
 
 ---
 

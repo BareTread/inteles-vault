@@ -39,6 +39,6 @@ Inventar complet de produse/URL‑uri: [[11-Source-Docs/links]] (copiat din repo
 
 Automatizare (API 2Performant):
 
-- Rulează `python scripts/2p/fetch_and_build.py` după ce setezi `.env`.
+- Rulează `python scripts/twop/fetch_and_build.py` după ce setezi `.env`.
 - Generează [[04-Monetization/Auto-Generated-Affiliate-Links]].
 - Surse: Programe acceptate + produse curate (Libris, SpringFarma, etc.).

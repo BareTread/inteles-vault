@@ -6,6 +6,7 @@ __pycache__/
 .Python
 env/
 venv/
+.venv/
 *.egg-info/
 dist/
 build/
@@ -31,6 +32,14 @@ secrets/
 # Large dumps or archives (keep vault lean)
 *.dump
 Programs-Dump.json
+04-Monetization/Programs-Dump.json
+
+# Generated image assets
+10-Assets/pexels/raw/
+10-Assets/pexels/processed/
+
+# Local env
+.env
 
 # IDE
 .vscode/
