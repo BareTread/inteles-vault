@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Obsidian
+.obsidian/
+.trash/
+
+# Logs
+*.log
+
+# Sensitive data (if any)
+*.env
+secrets/
+
+# Large dumps or archives (keep vault lean)
+*.dump
+Programs-Dump.json
+
+# IDE
+.vscode/
+.idea/
