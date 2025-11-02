@@ -8,27 +8,31 @@ Scop: hub operațional pentru înteles.ro (strategie, scriere, MCP, imagini, mon
 
 ## ⚡ START RAPID
 
-- 🧠 Citește întâi: [[SOP|SOP — The Philosophy]]
-- 📝 Creează un articol: [[07-Templates/TPL-Vis-Interpretare]]
-- 🧩 Resurse afiliate: [[07-Templates/HTML-Resource-Box]] • ⭐ [[04-Monetization/MASTER-PRODUCTS-LIST|MASTER PRODUCTS LIST]]
-- 🖼️ Imagini Pexels + upload WP: [[03-MCP-Operations/MCP-Pexels-Workflow]]
-- 🔄 Actualizează un articol: [[06-Workflows/Flux-Actualizare-Articol]]
-- 📊 Pipeline: [[09-Tracking/Article-Pipeline]]
+**For AI Agents Writing Articles:**
+- 🚀 **[[AI-AGENT-WORKFLOW|AI AGENT WORKFLOW]]** ← **WRITE ARTICLES HERE (9 steps, inevitable success)**
+
+**Supporting Files:**
+- 🎯 [[04-Monetization/AI-AGENT-QUICK-PICKS|Quick Picks]] — Product selection (10 sec, max revenue)
+- 📋 [[00-AGENT-CONTEXT/02-WRITING-RUBRIC|Writing Rubric]] — Quality checklist (≥7/10)
+- 📝 [[07-Templates/TPL-Vis-Interpretare|Dream Template]] — Structure for dream articles
+- 🧠 [[SOP|SOP — The Philosophy]] — Understanding WHY (optional reading)
 
 ---
 
 ## 🗺️ NAVIGAȚIE PRINCIPALĂ
 
-- ⭐ [[START-HERE|START HERE — Writer Agent Guide]] ← **BEGIN HERE ALWAYS**
-- 🧠 [[SOP|SOP — The Philosophy]] ← **UNDERSTAND HOW TO THINK**
+- 🚀 [[AI-AGENT-WORKFLOW|AI AGENT WORKFLOW]] ← **WRITE ARTICLES HERE (9 steps)**
+- ⭐ [[START-HERE|START HERE]] ← **Quick reference + philosophy**
+- 🧠 [[SOP|SOP — The Philosophy]] ← **Understanding HOW TO THINK (optional)**
 - 00 — [[00-AGENT-CONTEXT/00-AGENT-README|Agent Context (lean pack)]]
 - 01 — [[01-Project-Overview/Project-Summary|Project Overview]]
 - 02 — [[02-Content-Strategy/Content-Strategy|Content Strategy & SEO]]
 - 03 — [[03-MCP-Operations/MCP-Index|MCP Operations (WordPress & Pexels)]]
 - 04 — [[04-Monetization/Monetization-Guide|Monetization (2Performant)]]
-  - ⭐ [[04-Monetization/MASTER-PRODUCTS-LIST|MASTER PRODUCTS LIST]] ← **START HERE**
-  - [[04-Monetization/Unique-Tagging-Guide|`unique=` Tagging Guide]]
-  - [[04-Monetization/Affiliate-Programs-Index|Affiliate Programs Index (reference)]]
+  - 🎯 [[04-Monetization/AI-AGENT-QUICK-PICKS|AI Agent Quick Picks]] ← **USE THIS (10 sec, max revenue)**
+  - 📋 [[04-Monetization/LINK2-SETUP-TEST|Link2 Setup Guide]] — One-time WordPress plugin setup
+  - 📊 [[04-Monetization/MASTER-PRODUCTS-LIST.ACCEPTED|MASTER PRODUCTS LIST (ACCEPTED)]] — Reference
+  - [[04-Monetization/Affiliate-Programs-Index|Affiliate Programs Index (569 programs)]]
 - 05 — [[05-Design-Patterns/Design-Index|Design Patterns & HTML]]
 - 06 — [[06-Workflows/SOP-Content-Operations|Workflows & SOP]]
 - 07 — [[07-Templates/Templates-Index|Templates]]

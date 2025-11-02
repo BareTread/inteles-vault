@@ -114,7 +114,7 @@
 1. ✅ **Test all affiliate links** - Click through each to verify tracking
 2. 📊 **Monitor 2Performant dashboard** - Check click tracking within 24h
 3. 🔄 **A/B test product positions** - Move CTAs up/down to optimize
-4. 📧 **Set up email capture** - The newsletter CTAs are ready!
+
 
 ### Week 1-2:
 5. 🎯 **Monetize pages 5-10** from your top 30 list

@@ -739,8 +739,7 @@ Pentru cei interesați de [topic],
  20 +Alte căi (complementare, păstrând echilibrul):
  21 +- Publicitate contextuală (AdSense) — densitate redusă, doar între
  secțiuni mari.
- 22 +- Newsletter + magnet („Jurnal de vise PDF”) → monetizare pe email
- cu recomandări discrete.
+ 
  23 +- Ghiduri premium (PDF scurt) — „Top 50 simboluri onirice” (fără a
  canibaliza conținutul existent).
  24 +

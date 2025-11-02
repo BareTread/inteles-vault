@@ -1052,7 +1052,6 @@ Every article now includes:
 3. **Social Promotion:**
    - Share upgraded articles on Facebook
    - Create Pinterest pins for visuals
-   - Email newsletter announcement
 
 4. **A/B Testing:**
    - Test different CTAs for affiliates

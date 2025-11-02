@@ -239,33 +239,7 @@ Save this, reuse across all posts.
 
 ---
 
-## Workflow #5: Email Capture for Long-term Revenue
-
-### Strategy:
-Capture 1-2% of daily traffic (4-8 emails/day) → Build list → Promote affiliate products via email.
-
-```
-"Add this email capture popup to all inteles.ro posts with >50 comments or high traffic:
-
-[HTML for Mailchimp/ConvertKit popup]
-
-Configuration:
-- Show after 30 seconds OR 50% scroll
-- Mobile-optimized
-- Offer: 'Ghid gratuit: 50 de vise frecvente și semnificațiile lor'
-- Copy: 'Primește interpretări noi direct în inbox'
-- Only show once per user (cookie-based)"
-```
-
-**Revenue model:**
-- Capture 5 emails/day = 150/month
-- Email list of 1,800 in 1 year
-- Send weekly digest + affiliate products
-- 5% click-through × 10% conversion = €50-150/month extra
-
----
-
-## Workflow #6: Content Calendar & Consistency
+## Workflow #5: Content Calendar & Consistency
 
 ### Automate posting schedule
 
@@ -467,7 +441,6 @@ Track these monthly:
 - Posts with affiliate links: Target 100+
 - Affiliate click-through rate: Target 2-5%
 - 2Performant earnings: Target €300-700
-- Email subscribers: Target +100/month
 - Mobile bounce rate: Target <60%
 - New content published: Target 8-12 posts/month
 

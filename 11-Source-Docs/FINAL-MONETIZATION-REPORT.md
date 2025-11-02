@@ -123,7 +123,7 @@
 4. 🔄 **Monetize pages 8-15** from top 30 list
 5. 📱 **Mobile test** - Verify responsive display
 6. 🔗 **Internal linking** - Cross-link monetized articles
-7. 📧 **Email capture** - Add newsletter CTAs
+
 
 ### **This Month:**
 8. 🎯 **Complete all 30** top articles

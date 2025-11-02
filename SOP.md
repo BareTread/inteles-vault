@@ -213,6 +213,32 @@
 - **Dream journaling mentions** → Journals (Librex: jurnal de vise)
 - **Energy/morning themes** → Manuka honey (premium, high commission)
 
+### Zero‑Friction SOP: AI Agent Monetization (10 Seconds)
+
+**Prerequisites (One-Time Setup):**
+- Link2 plugin installed in WordPress (auto-converts URLs to affiliate links)
+- Configured in 2Performant dashboard (Tools > Link2)
+- 100% tracking guaranteed, zero errors possible
+
+**AI Agent Workflow (Revenue-Optimized):**
+
+1. **Open:** `04-Monetization/AI-AGENT-QUICK-PICKS.md`
+2. **Scan article** for primary keywords (energie, Jung/Freud, jurnal, insomnie, etc.)
+3. **Match to tier:**
+   - Energy/morning → Manuka honey (18% commission) ⭐⭐⭐
+   - Psychology/books → Libris (8% commission) ⭐⭐
+   - Dream journals → Librex (10% commission) ⭐⭐
+   - Sleep issues → SpringFarma (3.5% commission) ⭐
+4. **Copy regular URL** from Quick Picks (e.g., `https://manukashop.ro/produs`)
+5. **Paste in resource box** (template in Quick Picks file)
+6. **Done** — Link2 auto-converts to affiliate link with tracking
+
+**Rule:** Higher commission = priority. 1 product > 2 products (€5,000/month proven strategy).
+
+**Product List Updates (Monthly):**
+- Run `bash scripts/monetization-refresh.sh` to refresh accepted merchants
+- This keeps Quick Picks current with approved programs
+
 ### Placement That Converts
 
 **Best Practice:**

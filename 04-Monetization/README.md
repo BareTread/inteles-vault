@@ -1,26 +1,40 @@
 # Monetization — Quick Start
 
-## ⭐ FOR AI WRITERS: USE THIS FILE
+## ⭐ FOR AI WRITERS: START HERE
 
-**[[MASTER-PRODUCTS-LIST|MASTER PRODUCTS LIST]]** — Complete list of pre-selected products with ready-to-use affiliate links
+### 🚀 Quick Picks (Revenue-Optimized — USE THIS)
 
-This file contains ~50 curated products optimized for inteles.ro content:
+**[[AI-AGENT-QUICK-PICKS|AI Agent Quick Picks]]** — 10-second product selection, maximum revenue
 
-- Books (Jung, Freud, dream dictionaries)
-- Sleep supplements (magnesium, melatonin, herbal teas)
-- Energy products (Manuka honey)
-- Journals & mindfulness tools
-- Sleep devices
-- Wellness & beauty
+**How it works:**
+1. Scan article for keywords (energie, Jung/Freud, somn, etc.)
+2. Match to revenue tier (Manuka 18% > Libris 8% > SpringFarma 3.5%)
+3. Copy regular merchant URL from Quick Picks
+4. Paste in resource box
+5. Link2 plugin auto-converts to affiliate link (100% tracking guaranteed)
 
-**How to use:**
+**No thinking. No errors. Maximum revenue.**
 
-1. Open MASTER-PRODUCTS-LIST.md
-2. Scan the categories that match your article topic
-3. Pick 1-2 best-fit products
-4. Copy the affiliate link (already includes your code: 80f42fe2f)
-5. Use the HTML resource box template
-6. Add `unique=` tag for tracking
+---
+
+### 📋 Setup & Verification
+
+- **[[LINK2-SETUP-TEST|Link2 Setup Guide]]** — One-time WordPress plugin setup
+- **[[LINK2-VERIFICATION-CHECKLIST|Verification Checklist]]** — Confirm 100% tracking (do once)
+
+---
+
+### 📚 Full Product Lists (Reference)
+
+- **[[MASTER-PRODUCTS-LIST.ACCEPTED|MASTER PRODUCTS LIST (ACCEPTED)]]** — All approved merchants (CSV-verified)
+- **[[MASTER-PRODUCTS-LIST|MASTER PRODUCTS LIST]]** — Full curated list (may include unapproved merchants)
+
+~50 curated products organized by category:
+- Books (Jung, Freud, dream dictionaries) — 8% commission
+- Energy (Manuka honey) — 18% commission ⭐⭐⭐
+- Journals (dream journals, mindfulness) — 10% commission
+- Sleep supplements (magnesium, melatonin) — 3.5% commission
+- Sleep devices (wake-up lights, humidifiers) — 1% commission
 
 ---
 
@@ -29,6 +43,8 @@ This file contains ~50 curated products optimized for inteles.ro content:
 - [[Unique-Tagging-Guide|Unique Tagging Guide]] — How to create tracking tags
 - [[Affiliate-Programs-Index|Affiliate Programs Index]] — All 570 accepted programs
 - [[Product-Mapping|Product Mapping]] — Topic → product suggestions
+- [[Approved-Merchant-Homepages|Approved Merchant Homepages]] — Quicklinks for CSV merchants
+- [[Best-Opportunities.ACCEPTED|Best Opportunities (ACCEPTED)]] — Filtered to CSV merchants
 
 ---
 

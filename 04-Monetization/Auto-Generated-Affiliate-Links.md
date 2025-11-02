@@ -6,6 +6,7 @@ Sursa: API 2Performant (programe acceptate) + mapare produse curată.
 
 Atribute recomandate: `rel="nofollow sponsored noopener"` + disclosure ANPC.
 
+
 ## Cărți (Libris)
 
 - https://www.libris.ro/dictionar-de-vise-a120422--p27597066.html
@@ -32,7 +33,6 @@ Atribute recomandate: `rel="nofollow sponsored noopener"` + disclosure ANPC.
   https://event.2performant.com/events/click?ad_type=quicklink&aff_code=80f42fe2f&redirect_to=https%3A%2F%2Fmanukashop.ro%2Fmiere-de-manuka-mgo-850-250g.html
 
 Promoții relevante:
-
 - Transport gratuit la orice comanda si diverse discounturi in functie de produse ! :)
   https://www.manukashop.ro
   https://event.2performant.com/events/click?ad_type=quicklink&aff_code=80f42fe2f&redirect_to=https%3A%2F%2Fwww.manukashop.ro
@@ -43,7 +43,6 @@ Promoții relevante:
   https://event.2performant.com/events/click?ad_type=quicklink&aff_code=80f42fe2f&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Felectronice%2Falarme%2Fceas-beurer-wl-50.html
 
 Promoții relevante:
-
 - BLACK FRIDAY la evomag |  Reduceri de până la 70%! 🔥
   https://www.evomag.ro/ofertele-momentului
   https://event.2performant.com/events/click?ad_type=quicklink&aff_code=80f42fe2f&redirect_to=https%3A%2F%2Fwww.evomag.ro%2Fofertele-momentului
@@ -54,7 +53,6 @@ Promoții relevante:
   https://event.2performant.com/events/click?ad_type=quicklink&aff_code=80f42fe2f&redirect_to=https%3A%2F%2Fwww.flanco.ro%2Fumidificator-ecg-ah-d501-t.html
 
 Promoții relevante:
-
 - Black Friday 2025
   https://www.flanco.ro/catalog-flanco
   https://event.2performant.com/events/click?ad_type=quicklink&aff_code=80f42fe2f&redirect_to=https%3A%2F%2Fwww.flanco.ro%2Fcatalog-flanco

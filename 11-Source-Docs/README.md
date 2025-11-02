@@ -161,12 +161,10 @@ Your active merchants:
 
 ### Month 3-4 (Growth):
 - 50-80 posts with affiliate links
-- Email list building
 - €300-600/month
 
 ### Month 6+ (Optimized):
 - 100+ monetized posts
-- 500-1,000 email subscribers
 - €600-1,200/month
 
 **Time investment:** ~2 hours/week after initial setup
@@ -324,7 +322,6 @@ A: Yes! Add another MCP server config with BareTread credentials.
 
 ### Monthly:
 - Total monetized posts: Target 50+ (Month 1), 100+ (Month 3)
-- Email subscribers: Target +100/month
 - 2Performant earnings: Target €300-700
 - Mobile bounce rate: Target <60%
 

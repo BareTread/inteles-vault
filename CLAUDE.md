@@ -2,9 +2,27 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-**⚠️ IMPORTANT:** Writer agents should ALWAYS start with [[START-HERE.md]] instead of this file!
+---
 
-This file is for technical setup and reference. For content writing, use START-HERE.md.
+## 🚀 FOR AI WRITER AGENTS: START HERE
+
+**If you're writing articles for inteles.ro:**
+
+1. **Load:** `AI-AGENT-WORKFLOW.md` ← **Complete 9-step workflow (inevitable success)**
+2. **Follow Steps 1-9** → Linear process, zero ambiguity
+3. **Product selection:** Built into Step 3 (10 seconds, max revenue)
+4. **Quality guarantee:** Built into Step 7 (score ≥70/100)
+5. **Link2 tracking:** 100% guaranteed (verified working)
+
+**Everything you need is in that one file. No context loading overhead. No decision paralysis.**
+
+**DO NOT load:** `11-Source-Docs/*` (bloat), `history.md`, full MASTER-PRODUCTS-LIST
+
+---
+
+## ⚙️ FOR TECHNICAL/DEVELOPMENT TASKS
+
+This section is for technical setup, automation, and system maintenance. **Not for content writing.**
 
 ---
 
