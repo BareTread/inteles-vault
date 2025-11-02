@@ -62,14 +62,14 @@ If you want to understand WHY this system works (not required for writing):
 
 **DO:**
 - ✅ Max 1 product per article (proven €5,000/month strategy)
-- ✅ Use `AI-AGENT-QUICK-PICKS.md` (10-second selection)
-- ✅ Regular merchant URLs (Link2 auto-converts to affiliate links)
+- ✅ Search merchant website, paste product URL
+- ✅ Link2 auto-converts to affiliate link (100% tracking)
 - ✅ Place AFTER content, BEFORE FAQ
 - ✅ ANPC disclosure: "Link afiliat — câștigăm un mic comision fără costuri pentru tine"
 
 **DON'T:**
 - ❌ Multiple products (lower conversion + trust damage)
-- ❌ Manual 2Performant quicklinks (use regular URLs + Link2)
+- ❌ Pre-generated affiliate links (just paste regular URLs)
 - ❌ Product placement before delivering value
 
 ### SEO Strategy

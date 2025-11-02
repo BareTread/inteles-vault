@@ -12,10 +12,10 @@
 
 1. **This file** (`AI-AGENT-WORKFLOW.md`) — You are here
 2. **`00-AGENT-CONTEXT/02-WRITING-RUBRIC.md`** — Quality standards (score ≥7/10)
-3. **`04-Monetization/AI-AGENT-QUICK-PICKS.md`** — Product selection (10 seconds)
+3. **`04-Monetization/AI-AGENT-QUICK-PICKS.md`** — Merchant list (if Step 3 unclear)
 4. **`07-Templates/[template-name]`** — Article structure (load when writing)
 
-**DO NOT load:** `11-Source-Docs/` (bloat), `history.md`, full MASTER-PRODUCTS-LIST
+**DO NOT load:** `11-Source-Docs/` (bloat), `history.md`, `MASTER-PRODUCTS-LIST.md`
 
 ---
 
@@ -49,37 +49,41 @@
 
 ---
 
-### STEP 3: Select Product (10 Seconds)
+### STEP 3: Find Product (10 Seconds)
 
-**Open:** `04-Monetization/AI-AGENT-QUICK-PICKS.md` (already loaded)
-
-**Scan article topic for keywords:**
+**Scan article topic for keywords, match to merchant:**
 
 ```
-IF topic contains: ["energie", "dimineață", "trezire", "vitalitate"]
-  → Product: Manuka honey (18% commission)
-  → URL: https://manukashop.ro/miere-de-manuka-mgo-550-500g.html
+IF topic contains: ["energie", "dimineață", "vitalitate"]
+  → MERCHANT: manukashop.ro (18% commission)
+  → SEARCH: "miere manuka MGO 550"
 
-ELSE IF topic contains: ["Jung", "Freud", "carte", "psihologie", "simboluri", "arhetipuri"]
-  → Product: Jung - Analiza viselor (8% commission)
-  → URL: https://www.libris.ro/analiza-viselor-c-g-jung-TRE978-606-40-0393-5--p1258533.html
+ELSE IF topic contains: ["Jung", "Freud", "psihologie", "simboluri"]
+  → MERCHANT: libris.ro (8% commission)
+  → SEARCH: "analiza viselor jung"
 
-ELSE IF topic contains: ["jurnal", "înregistrare", "notițe", "tracking"]
-  → Product: Jurnal de vise (10% commission)
-  → URL: https://librex.ro/jurnal-vise
+ELSE IF topic contains: ["jurnal", "înregistrare", "tracking"]
+  → MERCHANT: librex.ro (10% commission)
+  → SEARCH: "jurnal vise"
 
-ELSE IF topic contains: ["insomnie", "somn", "anxietate", "stres", "coșmaruri"]
-  → Product: Melatonină (3.5% commission)
-  → URL: https://www.springfarma.com/melatonina-pura-5-mg-60-tablete.html
+ELSE IF topic contains: ["insomnie", "somn", "anxietate", "stres"]
+  → MERCHANT: springfarma.com (3.5% commission)
+  → SEARCH: "melatonina" OR "ashwagandha"
 
 ELSE (default for ANY dream article)
-  → Product: Libris homepage (8% commission)
-  → URL: https://www.libris.ro
+  → MERCHANT: libris.ro (8% commission)
+  → USE HOMEPAGE: https://www.libris.ro
 ```
 
-**Copy the URL.** You'll use it in Step 5.
+**Then:**
+1. Go to merchant website
+2. Search for product (or use homepage if default)
+3. Copy product URL from browser
+4. Save for Step 5
 
 **Rule:** Only 1 product per article (€5,000/month proven strategy).
+
+**Note:** Load `04-Monetization/AI-AGENT-QUICK-PICKS.md` if you need more merchant/product details.
 
 ---
 

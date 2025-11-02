@@ -17,13 +17,12 @@ Pipeline imagini (automat):
 - Folosește manifestul generat pentru alt/caption + upload în WP
 
 ⭐ **Monetizare — Link2 Plugin (AUTO):**
-- **Setup (once):** Adaugă script Link2 în WordPress footer → vezi [[04-Monetization/Monetization-Guide]]
-- **Writing:** Alege produse din [[04-Monetization/MASTER-PRODUCTS-LIST.ACCEPTED|MASTER PRODUCTS LIST (ACCEPTED)]]
-- **Paste:** URL normal merchant (ex. `https://intimax.ro/produs`) → Link2 convertește automat!
-- **Refresh produse:** `bash scripts/monetization-refresh.sh` (lunar sau când adaugi programe)
+- **Writing:** Match topic → merchant → Search site → Paste product URL
+- **Link2 converts:** Regular URL → affiliate link (100% tracking)
+- **Merchants:** manukashop.ro (18%), libris.ro (8%), librex.ro (10%), springfarma.com (3.5%)
+- **See:** [[04-Monetization/AI-AGENT-QUICK-PICKS|AI Agent Quick Picks]]
 - Format link: `rel="nofollow sponsored noopener"`
 - Disclosure: <em>Link afiliat — câștigăm un mic comision fără costuri pentru tine.</em>
-- Cod afiliat: `80f42fe2f` (deja în Link2 ID)
 
 Șabloane:
 - [[07-Templates/TPL-Vis-Interpretare]]

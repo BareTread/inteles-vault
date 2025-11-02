@@ -2,18 +2,18 @@
 
 ## ⭐ FOR AI WRITERS: START HERE
 
-### 🚀 Quick Picks (Revenue-Optimized — USE THIS)
+### 🚀 Quick Picks (ULTRA-SIMPLE — USE THIS)
 
-**[[AI-AGENT-QUICK-PICKS|AI Agent Quick Picks]]** — 10-second product selection, maximum revenue
+**[[AI-AGENT-QUICK-PICKS|AI Agent Quick Picks]]** — Search merchant + paste URL
 
 **How it works:**
-1. Scan article for keywords (energie, Jung/Freud, somn, etc.)
-2. Match to revenue tier (Manuka 18% > Libris 8% > SpringFarma 3.5%)
-3. Copy regular merchant URL from Quick Picks
+1. Match article topic → merchant (manukashop.ro, libris.ro, etc.)
+2. Search merchant website for product
+3. Copy product URL from browser
 4. Paste in resource box
-5. Link2 plugin auto-converts to affiliate link (100% tracking guaranteed)
+5. Link2 auto-converts to affiliate link (100% tracking guaranteed)
 
-**No thinking. No errors. Maximum revenue.**
+**No pre-generated links. No complex URLs. Just search + paste.**
 
 ---
 
