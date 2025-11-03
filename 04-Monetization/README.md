@@ -2,18 +2,17 @@
 
 ## ⭐ FOR AI WRITERS: START HERE
 
-### 🚀 Quick Picks (ULTRA-SIMPLE — USE THIS)
+### 🚀 Product URLs (10 Essential — USE THIS)
 
-**[[AI-AGENT-QUICK-PICKS|AI Agent Quick Picks]]** — Search merchant + paste URL
+**[[PRODUCT-URLS|Product URLs]]** — Pre-selected products with URLs ready to paste
 
 **How it works:**
-1. Match article topic → merchant (manukashop.ro, libris.ro, etc.)
-2. Search merchant website for product
-3. Copy product URL from browser
-4. Paste in resource box
-5. Link2 auto-converts to affiliate link (100% tracking guaranteed)
+1. Match article topic to decision tree (IF/ELSE)
+2. Copy product URL from list (10 products cover 95% of articles)
+3. Paste in resource box
+4. Link2 auto-converts to affiliate link (100% tracking guaranteed)
 
-**No pre-generated links. No complex URLs. Just search + paste.**
+**No searching. No complexity. Just match → copy → paste.**
 
 ---
 

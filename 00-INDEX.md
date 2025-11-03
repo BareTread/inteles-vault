@@ -25,7 +25,7 @@ Scop: hub operațional pentru înteles.ro (strategie, scriere, MCP, imagini, mon
 - 02 — [[02-Content-Strategy/Content-Strategy|Content Strategy & SEO]]
 - 03 — [[03-MCP-Operations/MCP-Index|MCP Operations (WordPress & Pexels)]]
 - 04 — [[04-Monetization/Monetization-Guide|Monetization (2Performant)]]
-  - 🎯 [[04-Monetization/AI-AGENT-QUICK-PICKS|Quick Picks]] ← **Search merchant + paste URL**
+  - 🎯 [[04-Monetization/PRODUCT-URLS|Product URLs (10 Essential)]] ← **Copy URL + paste**
   - 📋 [[04-Monetization/LINK2-SETUP-TEST|Link2 Setup Guide]] — One-time WordPress plugin setup
   - [[04-Monetization/Affiliate-Programs-Index|Affiliate Programs Index (569 programs)]]
 - 05 — [[05-Design-Patterns/Design-Index|Design Patterns & HTML]]
