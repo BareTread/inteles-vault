@@ -10,10 +10,11 @@
 
 ### Load These Files (In Order):
 
-1. **This file** (`AI-AGENT-WORKFLOW.md`) — You are here
-2. **`00-AGENT-CONTEXT/02-WRITING-RUBRIC.md`** — Quality standards (score ≥7/10)
-3. **`04-Monetization/PRODUCT-URLS.md`** — 10 products with URLs (loaded in Step 3)
-4. **`07-Templates/[template-name]`** — Article structure (load when writing)
+1. **This file** (`AI-AGENT-WORKFLOW.md`) — You are here (contains everything)
+2. **`00-AGENT-CONTEXT/02-WRITING-RUBRIC.md`** — Quality standards (loaded in Step 7)
+3. **`07-Templates/[template-name]`** — Article structure (loaded in Step 2)
+
+**Note:** Merchant URLs are built into Step 3 (no extra file needed)
 
 **DO NOT load:** `11-Source-Docs/` (bloat), `history.md`, `MASTER-PRODUCTS-LIST.md`
 
@@ -49,45 +50,37 @@
 
 ---
 
-### STEP 3: Select Product (5 Seconds)
+### STEP 3: Select Merchant (5 Seconds)
 
-**Load:** `04-Monetization/PRODUCT-URLS.md` (10 pre-selected products with URLs)
-
-**Scan article topic, match to decision tree:**
+**Scan article topic, match to merchant:**
 
 ```
-IF article contains: ["energie", "dimineață", "vitalitate"]
-  → URL: https://manukashop.ro/miere-de-manuka-mgo-550-500g.html
-  → NAME: "Mierea de Manuka MGO 550+"
+IF article contains: ["energie", "dimineață", "vitalitate", "sănătate"]
+  → URL: https://manukashop.ro
+  → TEXT: "miere de Manuka premium"
+  → COMMISSION: 18%
 
-ELSE IF contains: ["Jung", "arhetipuri", "inconștient"]
-  → URL: https://www.libris.ro/analiza-viselor-c-g-jung-TRE978-606-40-0393-5--p1258533.html
-  → NAME: "Analiza viselor de C.G. Jung"
+ELSE IF contains: ["jurnal", "înregistrare", "notițe", "tracking"]
+  → URL: https://librex.ro
+  → TEXT: "jurnal dedicat viselor"
+  → COMMISSION: 10%
 
-ELSE IF contains: ["Freud", "psihanaliză"]
-  → URL: https://www.libris.ro/interpretarea-visurilor-sigmund-freud-TRE978-973-50-6328-0--p1153026.html
-  → NAME: "Interpretarea visurilor de Sigmund Freud"
-
-ELSE IF contains: ["jurnal", "înregistrare", "tracking"]
-  → URL: https://librex.ro/jurnal-vise
-  → NAME: "Jurnal dedicat viselor"
-
-ELSE IF contains: ["insomnie", "adormire"]
-  → URL: https://www.springfarma.com/melatonina-pura-5-mg-60-tablete.html
-  → NAME: "Melatonină pură 5 mg"
-
-ELSE IF contains: ["coșmaruri", "anxietate"]
-  → URL: https://www.springfarma.com/ashwagandha-extract-500mg-60-capsule.html
-  → NAME: "Ashwagandha"
+ELSE IF contains: ["insomnie", "somn", "anxietate", "stres", "coșmaruri"]
+  → URL: https://www.springfarma.com
+  → TEXT: "suplimente naturale pentru somn"
+  → COMMISSION: 3.5%
 
 ELSE (default for ANY dream article)
   → URL: https://www.libris.ro
-  → NAME: "cărți de psihologie și interpretarea viselor"
+  → TEXT: "cărți de psihologie și interpretarea viselor"
+  → COMMISSION: 8%
 ```
 
-**Copy URL and product name** → Use in Step 5
+**Copy URL + TEXT** → Use in Step 5
 
-**Rule:** Only 1 product per article (€5,000/month proven strategy).
+**Note:** These are merchant homepages (never break). Link2 converts them to affiliate links automatically.
+
+**Rule:** Only 1 link per article (€5,000/month proven strategy).
 
 ---
 

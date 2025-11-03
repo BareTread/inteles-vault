@@ -9,9 +9,9 @@ Scop: hub operațional pentru înteles.ro (strategie, scriere, MCP, imagini, mon
 ## ⚡ START RAPID
 
 **For AI Agents Writing Articles:**
-- 🚀 **[[AI-AGENT-WORKFLOW|AI AGENT WORKFLOW]]** ← **WRITE ARTICLES HERE (9 steps, inevitable success)**
+- 🚀 **[[AI-AGENT-WORKFLOW|AI AGENT WORKFLOW]]** ← **WRITE ARTICLES HERE (9 steps)**
 
-**Everything else is built into the workflow. Just load that one file.**
+**Merchant URLs built into Step 3. Just load the workflow.**
 
 ---
 
@@ -25,7 +25,7 @@ Scop: hub operațional pentru înteles.ro (strategie, scriere, MCP, imagini, mon
 - 02 — [[02-Content-Strategy/Content-Strategy|Content Strategy & SEO]]
 - 03 — [[03-MCP-Operations/MCP-Index|MCP Operations (WordPress & Pexels)]]
 - 04 — [[04-Monetization/Monetization-Guide|Monetization (2Performant)]]
-  - 🎯 [[04-Monetization/PRODUCT-URLS|Product URLs (10 Essential)]] ← **Copy URL + paste**
+  - 🎯 [[04-Monetization/MERCHANT-HOMEPAGES|Merchant Homepages (5 URLs)]] ← **Never break**
   - 📋 [[04-Monetization/LINK2-SETUP-TEST|Link2 Setup Guide]] — One-time WordPress plugin setup
   - [[04-Monetization/Affiliate-Programs-Index|Affiliate Programs Index (569 programs)]]
 - 05 — [[05-Design-Patterns/Design-Index|Design Patterns & HTML]]

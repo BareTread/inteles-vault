@@ -2,17 +2,17 @@
 
 ## ⭐ FOR AI WRITERS: START HERE
 
-### 🚀 Product URLs (10 Essential — USE THIS)
+### 🚀 Merchant Homepages (5 URLs — USE THIS)
 
-**[[PRODUCT-URLS|Product URLs]]** — Pre-selected products with URLs ready to paste
+**[[MERCHANT-HOMEPAGES|Merchant Homepages]]** — 5 homepage URLs that NEVER break
 
 **How it works:**
-1. Match article topic to decision tree (IF/ELSE)
-2. Copy product URL from list (10 products cover 95% of articles)
+1. Match article topic → merchant (IF/ELSE)
+2. Copy homepage URL (manukashop.ro, libris.ro, etc.)
 3. Paste in resource box
 4. Link2 auto-converts to affiliate link (100% tracking guaranteed)
 
-**No searching. No complexity. Just match → copy → paste.**
+**Homepage URLs never break. Zero maintenance. Always works.**
 
 ---
 

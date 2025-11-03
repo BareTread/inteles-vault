@@ -17,9 +17,10 @@ Pipeline imagini (automat):
 - Folosește manifestul generat pentru alt/caption + upload în WP
 
 ⭐ **Monetizare — Link2 Plugin (AUTO):**
-- **Writing:** Match topic → Copy URL from [[04-Monetization/PRODUCT-URLS|Product URLs]] → Paste
-- **Link2 converts:** Regular URL → affiliate link (100% tracking)
-- **10 products:** Manuka (18%), Libris books (8%), Librex journal (10%), SpringFarma (3.5%)
+- **Writing:** Match topic → Copy merchant homepage → Paste
+- **5 merchants:** manukashop.ro (18%), libris.ro (8%), librex.ro (10%), springfarma.com (3.5%)
+- **Link2 converts:** Homepage URL → affiliate link (100% tracking)
+- **Default:** libris.ro (fits ANY dream article)
 - Format link: `rel="nofollow sponsored noopener"`
 - Disclosure: <em>Link afiliat — câștigăm un mic comision fără costuri pentru tine.</em>
 
