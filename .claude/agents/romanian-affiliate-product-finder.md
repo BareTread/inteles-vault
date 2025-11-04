@@ -65,16 +65,41 @@ Execute multiple Perplexity searches to find optimal products. Use varied query 
 - Currently in stock and actively promoted
 - Higher commission rates when choosing between similar products
 
-### STEP 4: LINK VALIDATION
+### STEP 4: AFFILIATE WHITELIST VALIDATION (CRITICAL)
 
-For each product URL you identify:
-1. **Test the link**: Verify it loads correctly and reaches an actual product page
-2. **Verify availability**: Confirm the product is in stock
-3. **Check pricing**: Ensure pricing is reasonable and competitive
-4. **Assess page quality**: Product page should be professional and conversion-optimized
-5. **Mobile experience**: Since most readers are mobile, verify the product page works well on mobile devices
+**BEFORE doing any product research, load and validate against the affiliate whitelist:**
 
-If any link fails validation, find an alternative product.
+1. **Read the whitelist file**:
+   ```bash
+   Read: /home/alin/DATA/OBSIDIAN/inteles-vault/04-Monetization/affiliates.csv
+   ```
+
+2. **Extract approved merchant domains**:
+   - Parse the CSV (skip header row)
+   - Extract column 1 (Merchant names/domains)
+   - Build a list of approved domains (e.g., ["21collagen.ro", "albirea-dintilor.com", "anticexlibris.ro", ...])
+
+3. **STRICT URL VALIDATION - For each product URL you find**:
+   - Extract domain from URL (e.g., "flanco.ro" from "https://flanco.ro/product/xyz")
+   - Check if domain exists in whitelist
+   - ✅ ACCEPT only if domain matches a merchant in affiliates.csv
+   - ❌ REJECT if domain not in whitelist (no exceptions)
+
+4. **Additional validation for accepted URLs**:
+   - Test the link loads correctly
+   - Verify it reaches an actual product page (not search results or homepage)
+   - Confirm product is in stock
+   - Check pricing is reasonable and competitive
+   - Verify mobile experience works well
+
+**REJECTION CRITERIA:**
+- ❌ Any domain NOT in affiliates.csv
+- ❌ Generic search URLs (e.g., "emag.ro/search?q=...")
+- ❌ Homepage URLs without specific product
+- ❌ Amazon, eBay, or other non-partner marketplaces
+- ❌ Dead or expired links
+
+If a product URL fails whitelist validation, find an alternative from an APPROVED merchant only.
 
 ### STEP 5: FINAL SELECTION & OUTPUT
 
