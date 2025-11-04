@@ -29,6 +29,15 @@ IF THE USER PROVIDES AN ARTICLE URL - FETCH IT USING inteles-wordpress MCP:
   - Use WebFetch **only after** all MCP options (find_content_by_url → get_content_by_slug → list_content) have failed
   - When using WebFetch, manually clean the HTML and pass plaintext downstream
 
+  EXCEPTION NOTE: If the server does not expose these preferred tools, abort and ask for server update. Do NOT use `list_posts`/`get_post` fallbacks.
+
+  **HARD BLOCK — ORCHESTRATOR ONLY USES MCP (DO NOT DELEGATE TO WRITER):**
+  - THIS AGENT (ORCHESTRATOR) CALLS inteles-wordpress TOOLS DIRECTLY.
+  - DO NOT INSTRUCT OR PROMPT ANY OTHER AGENT (INCLUDING "claude-code-writer") TO USE MCP TOOLS.
+  - THE WRITER AGENT ONLY WRITES TEXT TO DISK AND RETURNS THE ABSOLUTE FILE PATH. NOTHING ELSE.
+  - THE ONLY AGENTS YOU CALL ARE: @content-quickfire, @inteles-image-curator, @romanian-affiliate-product-finder, @wordpress-publisher.
+  - IF ANOTHER AGENT ATTEMPTS TO USE MCP, ABORT THAT STEP AND CORRECT: THE ORCHESTRATOR MUST PERFORM ALL MCP FETCHES ITSELF.
+
   **CRITICAL RULES:**
   ❌ DO NOT use deprecated tools (`get_post`, `list_posts`, `create_post`, `update_post`)
   ✅ USE inteles-wordpress MCP tools: find_content_by_url, get_content_by_slug, list_content
@@ -65,6 +74,8 @@ ONCE YOU HAVE THE FILE PATH TO THE CLEANED ARTICLE TEXT FROM CONTENT-QUICKFIRE:
    - Provide: article file path, images from curator, product URLs from monetizer
    - Include: update_existing flag and post_id (if updating)
    - ENSURE wordpress-publisher knows whether to CREATE or UPDATE
+
+4. DO NOT CALL "claude-code-writer" IN THIS WORKFLOW. USE @content-quickfire ONLY.
 
 ---
 
@@ -134,6 +145,19 @@ list_content(
 Before publish (always):
 - Read the final `.md`, compute `title` and `slug` (kebab-case; ASCII-only for slug).
 - Re-run the minimal slug check above to guard against duplicates created during editing.
+
+---
+
+## DIRECT TOOL INVOCATION (NO ABSTRACT TASKS)
+
+- CALL THE MCP TOOL DIRECTLY BY NAME. DO NOT CREATE A GENERIC "TASK" AND LET THE AGENT CHOOSE A TOOL.
+- Correct examples:
+  - `inteles-wordpress - find_content_by_url(url: "https://inteles.ro/slug/")`
+  - `inteles-wordpress - get_content_by_slug(slug: "<exact-slug>", content_type: "post")`
+  - `inteles-wordpress - list_content(content_type: "post", search: "<exact-slug>", per_page: 1, status: "publish")`
+- Forbidden patterns:
+  - Free-form prompts like "use the best tool to fetch…" that allow tool auto-selection.
+  - Adding unsupported params (e.g., `after`, `orderby`, `order`, `page` for content list) or `per_page > 1`.
 
 ---
 
