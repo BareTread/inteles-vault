@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate SEO-ready WebP assets for inteles.ro from raw Pexels downloads.
+"""Generate SEO-ready WebP assets for TVA Guide 2025 article on inteles.ro.
 
 Features:
   - Light random micro-adjustments (crop, rotate, color/brightness) for uniqueness
@@ -9,15 +9,13 @@ Features:
   - Metadata export (JSON + CSV) for WordPress/Kadence
 
 Usage:
-    python pexels_image_pipeline.py [--seed 1234] [--quality 82]
+    python tva_article_image_pipeline.py [--seed 1234] [--quality 82]
 
 Output:
     processed/
       ├── {filename}.webp
       ├── metadata.json
       └── metadata.csv
-
-Adjust SPECS list or pass custom specs programmatically for agent use.
 """
 
 from __future__ import annotations
@@ -77,42 +75,79 @@ class ImageSpec:
     recommended: bool = True
 
 
+# TVA Guide 2025 Image Specifications
 SPECS: List[ImageSpec] = [
     ImageSpec(
-        src="pexels_3763996_original.jpeg",
-        out="atleta-heptathlon-start-competitie.webp",
+        src="pexels_8970693_original.jpeg",
+        out="tva-ghid-ero-calcul-formula-birou-profesional.webp",
         role="hero",
         target_width=1600,
         target_height=900,
-        alt="Atletă feminină pregătită la start pe pistă de atletism, concentrată și determinată pentru competiția de heptathlon",
-        caption="Heptathlonul reprezintă testul suprem al versatilității atletice feminine, combinând viteză, forță și tehnică.",
-        placement="Imediat după H1, introducere",
-        keywords=["heptathlon", "atletism", "atletă feminină", "competiție"],
+        alt="Birou profesional organizat cu laptop, documente financiare și calculator pentru calcul TVA, reprezentând ghidul complet fiscal 2025",
+        caption="TVA reprezintă un pilon fundamental al sistemului fiscal românesc, afectând atât antreprenorii, cât și consumatorii finali.",
+        placement="Imediat după titlul H1, introducere",
+        keywords=["TVA", "calcul fiscal", "ghid TVA 2025", "documentație financiară", "birou contabilitate"],
         priority="1",
     ),
     ImageSpec(
-        src="pexels_6504819_original.jpeg",
-        out="atleta-saritura-lungime-heptathlon.webp",
+        src="pexels_6120251_original.jpeg",
+        out="tva-calcul-cote-procente-financiare-business.webp",
         role="inline",
         target_width=1200,
         target_height=675,
-        alt="Atletă feminină executând săritura în lungime cu tehnică perfectă, una dintre probele cheie din heptathlon",
-        caption="Săritura în lungime demonstrează combinația de viteză, forță explozivă și tehnică rafinată specifică heptathlonului.",
-        placement="Secțiunea 'Semnificația Profundă a Celor Șapte Probe'",
-        keywords=["săritură lungime", "heptathlon probe", "atletism feminin"],
+        alt="Calcul TVA cu cote procente pe fond roșu, monede și grafice financiare pentru businessul românesc",
+        caption="Modificările cotelor TVA din 2025 impun recalcularea prețurilor și adaptarea sistemelor de facturare.",
+        placement="Secțiunea 'Cotele TVA în România' după prezentarea modificărilor 2025",
+        keywords=["cote TVA", "procente TVA", "calcul TVA 2025", "modificări fiscale", "finanțe business"],
         priority="2",
     ),
     ImageSpec(
-        src="pexels_15432888_original.jpeg",
-        out="atleta-aruncare-sulita-heptathlon.webp",
+        src="pexels_6929017_original.jpeg",
+        out="tva-formulare-declaratii-documentatie-conformitate.webp",
         role="inline",
         target_width=1200,
         target_height=675,
-        alt="Atletă feminină aruncând sulița cu putere și precizie în stadion, probă tehnică din heptathlon",
-        caption="Aruncarea suliței necesită coordonare excepțională și forță, completând profilul complet al atletei de heptathlon.",
-        placement="Secțiunea 'Semnificația Profundă a Celor Șapte Probe'",
-        keywords=["aruncare suliță", "heptathlon probe tehnice", "atletă completă"],
+        alt="Formulare TVA și documente de conformitate fiscală cu peniță și ochelari pe birou, simbolizând obligațiile antreprenorilor",
+        caption="Obligațiile de declarare TVA necesită atenție la detalii și respectarea termenelor limită pentru evitarea sancțiunilor.",
+        placement="Secțiunea 'Obligațiile Antreprenorilor'",
+        keywords=["declarații TVA", "formulare fiscale", "conformitate TVA", "obligații antreprenori", "documentație fiscală"],
         priority="3",
+    ),
+    ImageSpec(
+        src="pexels_4050451_original.jpeg",
+        out="tva-efactura-digitalizare-sistem-modern-facturare-electronica.webp",
+        role="inline",
+        target_width=1200,
+        target_height=675,
+        alt="Sistem modern e-Factura cu laptop și smartphone, reprezentând digitalizarea facturării și sistemul TVA electronic",
+        caption="Sistemul e-Factura elimină birocrația și combate evaziunea fiscală prin automatizarea proceselor de facturare.",
+        placement="Secțiunea 'Sistemul e-Factura'",
+        keywords=["e-Factura", "facturare electronică", "digitalizare TVA", "sistem fiscal modern", "ANAF electronic"],
+        priority="4",
+    ),
+    ImageSpec(
+        src="pexels_20034030_original.jpeg",
+        out="tva-comert-international-export-import-container-european.webp",
+        role="inline",
+        target_width=1200,
+        target_height=675,
+        alt="Containere maritime colorate în port internațional, simbolizând comerțul UE și reglementările TVA la export-import",
+        caption="Regulamentările TVA în comerțul internațional facilitează scutirile la export și taxarea la import în Uniunea Europeană.",
+        placement="Secțiunea 'TVA în Comerțul Internațional'",
+        keywords=["TVA internațional", "export import UE", "comerț european", "containere maritime", "reglementări TVA UE"],
+        priority="5",
+    ),
+    ImageSpec(
+        src="pexels_8112148_original.jpeg",
+        out="tva-consultanta-negocii-planificare-strategie-2025.webp",
+        role="inline",
+        target_width=1200,
+        target_height=675,
+        alt="Ședință de consultanță de afaceri pentru planificarea strategică a modificărilor TVA 2025",
+        caption="Consultanța specializată și planificarea strategică asigură tranziția lină către noile reglementări TVA din 2025.",
+        placement="Secțiunea 'Pregătirea pentru Schimbările din 2025'",
+        keywords=["consultanță TVA", "planificare fiscală 2025", "strategie business", "modificări TVA", "consultanță afaceri"],
+        priority="6",
     ),
 ]
 
@@ -319,7 +354,7 @@ def process_image(spec: ImageSpec, seed: int | None, quality: int = 82) -> Dict[
         "alt": spec.alt,
         "caption": spec.caption,
         "placement": spec.placement,
-        "keywords": spec.keywords,
+        "keywords": spec.get("keywords", []),
         "priority": spec.priority,
         "recommended": spec.recommended,
         "final_quality": details["quality"],
@@ -374,8 +409,8 @@ def write_metadata(results: List[Dict[str, Any]]) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Procesează imaginile Pexels pentru inteles.ro")
-    parser.add_argument("--seed", type=int, default=None, help="Seed pentru reproducibilitate")
+    parser = argparse.ArgumentParser(description="Procesează imaginile pentru articolul TVA Guide 2025")
+    parser.add_argument("--seed", type=int, default=1234, help="Seed pentru reproducibilitate")
     parser.add_argument("--quality", type=int, default=82, help="Calitate WebP (55-95, default: 82)")
     return parser.parse_args()
 
@@ -385,7 +420,7 @@ def main() -> None:
     ensure_dirs()
 
     # Show feature status
-    print(f"🎨 Pipeline Features:")
+    print(f"🎨 TVA Guide 2025 Image Pipeline:")
     print(f"   - Dedupe: {'✅' if HAS_DEDUPE else '❌ (install python-imagehash)'}")
     print(f"   - BlurHash: {'✅' if HAS_BLURHASH else '❌ (install python-blurhash)'}")
     print(f"   - Romanian slugs: {'✅' if HAS_UNIDECODE else '❌ (install python-unidecode)'}")
@@ -406,9 +441,8 @@ def main() -> None:
                 print(f"   - {item['src'] if 'src' in item else item['file']} -> {status}")
     else:
         ok_count = len([r for r in results if r.get("status") == "ok"])
-        print(f"✅ Procesat {ok_count} imagini în {OUT_DIR}")
+        print(f"✅ Procesat {ok_count} imagini pentru articolul TVA Guide 2025 în {OUT_DIR}")
 
 
 if __name__ == "__main__":
     main()
-

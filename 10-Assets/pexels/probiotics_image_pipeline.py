@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate SEO-ready WebP assets for inteles.ro from raw Pexels downloads.
+"""Generate SEO-ready WebP assets for inteles.ro probiotics article from raw Pexels downloads.
 
 Features:
   - Light random micro-adjustments (crop, rotate, color/brightness) for uniqueness
@@ -9,15 +9,13 @@ Features:
   - Metadata export (JSON + CSV) for WordPress/Kadence
 
 Usage:
-    python pexels_image_pipeline.py [--seed 1234] [--quality 82]
+    python probiotics_image_pipeline.py [--seed 1234] [--quality 82]
 
 Output:
     processed/
       ├── {filename}.webp
       ├── metadata.json
       └── metadata.csv
-
-Adjust SPECS list or pass custom specs programmatically for agent use.
 """
 
 from __future__ import annotations
@@ -78,41 +76,60 @@ class ImageSpec:
 
 
 SPECS: List[ImageSpec] = [
+    # Hero Image - Traditional Romanian Fermented Foods
     ImageSpec(
-        src="pexels_3763996_original.jpeg",
-        out="atleta-heptathlon-start-competitie.webp",
+        src="pexels_18742253_original.jpeg",
+        out="probiotics-naturali-muraturi-romanesti-traditionale.webp",
         role="hero",
         target_width=1600,
         target_height=900,
-        alt="Atletă feminină pregătită la start pe pistă de atletism, concentrată și determinată pentru competiția de heptathlon",
-        caption="Heptathlonul reprezintă testul suprem al versatilității atletice feminine, combinând viteză, forță și tehnică.",
+        alt="Murături tradiționale românești în borcane de sticlă pe raft de lemn, surse naturale de probiotice sănătoși",
+        caption="Murăturile tradiționale românești reprezintă una dintre cele mai bogate surse naturale de probiotice, sănătatea消化ivului fiind protejată prin fermentație naturală.",
         placement="Imediat după H1, introducere",
-        keywords=["heptathlon", "atletism", "atletă feminină", "competiție"],
+        keywords=["murături", "probiotice naturale", "tradiție românească", "fermentație", "băutură sănătoasă"],
         priority="1",
     ),
+
+    # Image 2 - Natural Yogurt
     ImageSpec(
-        src="pexels_6504819_original.jpeg",
-        out="atleta-saritura-lungime-heptathlon.webp",
+        src="pexels_4428345_original.jpeg",
+        out="probiotics-naturali-yogurt-sanatos-din-borca.webp",
         role="inline",
         target_width=1200,
         target_height=675,
-        alt="Atletă feminină executând săritura în lungime cu tehnică perfectă, una dintre probele cheie din heptathlon",
-        caption="Săritura în lungime demonstrează combinația de viteză, forță explozivă și tehnică rafinată specifică heptathlonului.",
-        placement="Secțiunea 'Semnificația Profundă a Celor Șapte Probe'",
-        keywords=["săritură lungime", "heptathlon probe", "atletism feminin"],
+        alt="Iaurt natural servit din borcan cu lingură de lemn, probiotic natural tradițional românesc",
+        caption="Iaurtul natural este unul dintre cele mai accesibile și eficiente probiotice naturale, bogat în culturi vii benefice pentru sănătatea digestivă.",
+        placement="Secțiunea 'Probiotice naturale lactate'",
+        keywords=["iaurt natural", "probiotice lactate", "sănătate digestivă", "culturi vii"],
         priority="2",
     ),
+
+    # Image 3 - Yogurt Parfait
     ImageSpec(
-        src="pexels_15432888_original.jpeg",
-        out="atleta-aruncare-sulita-heptathlon.webp",
+        src="pexels_9874979_original.jpeg",
+        out="probiotics-naturali-yogurt-parfait-fructe-granola.webp",
         role="inline",
         target_width=1200,
         target_height=675,
-        alt="Atletă feminină aruncând sulița cu putere și precizie în stadion, probă tehnică din heptathlon",
-        caption="Aruncarea suliței necesită coordonare excepțională și forță, completând profilul complet al atletei de heptathlon.",
-        placement="Secțiunea 'Semnificația Profundă a Celor Șapte Probe'",
-        keywords=["aruncare suliță", "heptathlon probe tehnice", "atletă completă"],
+        alt="Parfait delicios cu iaurt, fructe proaspete și granola, mic dejun sănătos bogat în probiotice naturale",
+        caption="Un parfait cu iaurt și fructe reprezintă o modalitate delicioasă de a consuma probiotice naturale dimineața, pentru energie și sănătate digestivă.",
+        placement="Secțiunea 'Beneficiile probioticelor asupra sănătății'",
+        keywords=["parfait iaurt", "mic dejun sănătos", "probiotice", "fructe proaspete", "energie"],
         priority="3",
+    ),
+
+    # Image 4 - Microbiome Health Visualization
+    ImageSpec(
+        src="pexels_5841764_original.jpeg",
+        out="probiotics-naturali-microbiom-sanatate-digestiva-illustratie.webp",
+        role="inline",
+        target_width=1200,
+        target_height=675,
+        alt="Ilustrație științifică a microbiomului uman și bacteriilor benefice, arătând cum probioticele naturale susțin sănătatea digestivă",
+        caption="Microbiomul intestinal conține mii de miliarde de bacterii benefice care lucrează împreună pentru a proteja sănătatea digestivă și imunitară.",
+        placement="Secțiunea 'Conexiunea gut-brain și microbiom'",
+        keywords=["microbiom", "sănătate digestivă", "bacterii benefice", "ilustrație medicală", "probiotice"],
+        priority="4",
     ),
 ]
 
@@ -374,7 +391,7 @@ def write_metadata(results: List[Dict[str, Any]]) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Procesează imaginile Pexels pentru inteles.ro")
+    parser = argparse.ArgumentParser(description="Procesează imaginile Pexels pentru articolul de probiotice")
     parser.add_argument("--seed", type=int, default=None, help="Seed pentru reproducibilitate")
     parser.add_argument("--quality", type=int, default=82, help="Calitate WebP (55-95, default: 82)")
     return parser.parse_args()
@@ -411,4 +428,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

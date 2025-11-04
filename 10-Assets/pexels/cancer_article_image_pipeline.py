@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate SEO-ready WebP assets for inteles.ro from raw Pexels downloads.
+"""Generate SEO-ready WebP assets for cancer article "care este cel mai grav cancer" from raw Pexels downloads.
 
 Features:
   - Light random micro-adjustments (crop, rotate, color/brightness) for uniqueness
@@ -9,7 +9,7 @@ Features:
   - Metadata export (JSON + CSV) for WordPress/Kadence
 
 Usage:
-    python pexels_image_pipeline.py [--seed 1234] [--quality 82]
+    python cancer_article_image_pipeline.py [--seed 1234] [--quality 82]
 
 Output:
     processed/
@@ -17,7 +17,6 @@ Output:
       ├── metadata.json
       └── metadata.csv
 
-Adjust SPECS list or pass custom specs programmatically for agent use.
 """
 
 from __future__ import annotations
@@ -79,40 +78,52 @@ class ImageSpec:
 
 SPECS: List[ImageSpec] = [
     ImageSpec(
-        src="pexels_3763996_original.jpeg",
-        out="atleta-heptathlon-start-competitie.webp",
+        src="pexels_7659880_large.jpeg",
+        out="doctor- speranta-cancer-preventie.webp",
         role="hero",
         target_width=1600,
         target_height=900,
-        alt="Atletă feminină pregătită la start pe pistă de atletism, concentrată și determinată pentru competiția de heptathlon",
-        caption="Heptathlonul reprezintă testul suprem al versatilității atletice feminine, combinând viteză, forță și tehnică.",
+        alt="Doctor ținând un semn 'Speranță' pentru conștientizarea cancerului de sân, mesaj de optimism și sprijin medical",
+        caption="Medicii sunt alături de pacienți cu speranță și profesionalism în lupta împotriva cancerului.",
         placement="Imediat după H1, introducere",
-        keywords=["heptathlon", "atletism", "atletă feminină", "competiție"],
+        keywords=["doctor", "speranță", "cancer", "prevenție", "sprijin medical"],
         priority="1",
     ),
     ImageSpec(
-        src="pexels_6504819_original.jpeg",
-        out="atleta-saritura-lungime-heptathlon.webp",
+        src="pexels_6436283_large.jpeg",
+        out="femeie-cu-scarf-cancer-conștientizare.webp",
         role="inline",
         target_width=1200,
         target_height=675,
-        alt="Atletă feminină executând săritura în lungime cu tehnică perfectă, una dintre probele cheie din heptathlon",
-        caption="Săritura în lungime demonstrează combinația de viteză, forță explozivă și tehnică rafinată specifică heptathlonului.",
-        placement="Secțiunea 'Semnificația Profundă a Celor Șapte Probe'",
-        keywords=["săritură lungime", "heptathlon probe", "atletism feminin"],
+        alt="Femeie cu eșarfă aplicând balsam de buze, simbol de forță și conștientizare a cancerului",
+        caption="Îngrijirea personală și grijă de sine sunt importante în călătoria de recuperare.",
+        placement="Secțiunea 'Factori de risc și strategii de prevenție'",
+        keywords=["femeie", "scarf", "cancer", "conștientizare", "forță", "recuperare"],
         priority="2",
     ),
     ImageSpec(
-        src="pexels_15432888_original.jpeg",
-        out="atleta-aruncare-sulita-heptathlon.webp",
+        src="pexels_7088831_large.jpeg",
+        out="tehnician-radiologie-echipament-medical.webp",
         role="inline",
         target_width=1200,
         target_height=675,
-        alt="Atletă feminină aruncând sulița cu putere și precizie în stadion, probă tehnică din heptathlon",
-        caption="Aruncarea suliței necesită coordonare excepțională și forță, completând profilul complet al atletei de heptathlon.",
-        placement="Secțiunea 'Semnificația Profundă a Celor Șapte Probe'",
-        keywords=["aruncare suliță", "heptathlon probe tehnice", "atletă completă"],
+        alt="Tehnician radiologie luând notițe lângă aparatul RMN, diagnostic modern al cancerului",
+        caption="Echipamentele medicale moderne joacă un rol crucial în diagnosticarea timpurie a cancerului.",
+        placement="Secțiunea 'Importanța detectării timpurii și a screening-ului'",
+        keywords=["radiologie", "tehnician", "RMN", "cancer", "diagnostic", "medical"],
         priority="3",
+    ),
+    ImageSpec(
+        src="pexels_7659774_large.jpeg",
+        out="grup-suport-femei-speranță-cancer.webp",
+        role="inline",
+        target_width=1200,
+        target_height=675,
+        alt="Trei femei arătând speranță și sprijin pentru conștientizarea cancerului de sân, una ține un semn 'Speranță'",
+        caption="Grupurile de sprijin oferă putere și speranță în lupta împotriva cancerului.",
+        placement="Secțiunea 'Sisteme de sprijin și sănătate emoțională'",
+        keywords=["grup suport", "femei", "speranță", "cancer", "sprijin emoțional"],
+        priority="4",
     ),
 ]
 
@@ -374,7 +385,7 @@ def write_metadata(results: List[Dict[str, Any]]) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Procesează imaginile Pexels pentru inteles.ro")
+    parser = argparse.ArgumentParser(description="Procesează imaginile Pexels pentru articolul cancerului")
     parser.add_argument("--seed", type=int, default=None, help="Seed pentru reproducibilitate")
     parser.add_argument("--quality", type=int, default=82, help="Calitate WebP (55-95, default: 82)")
     return parser.parse_args()
@@ -411,4 +422,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
