@@ -1,0 +1,17 @@
+# Core dependencies (required)
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Optional features (graceful degradation if missing)
+blurhash>=1.1.4          # LQIP placeholders (Core Web Vitals)
+imagehash>=4.3.0         # Dedupe protection
+unidecode>=1.3.0         # Romanian → ASCII slug conversion
+
+# ===== ARCH LINUX INSTALL =====
+# Use system packages instead of pip:
+#   sudo pacman -S python-pillow python-numpy python-blurhash
+#
+# For imagehash and unidecode (not in Arch repos):
+#   python -m venv venv
+#   source venv/bin/activate
+#   pip install imagehash unidecode

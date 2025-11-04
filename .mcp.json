@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "claude-code-writer": {
+      "command": "node",
+      "args": [
+        "/home/alin/claude-code-mcp/dist/server.js"
+      ],
+      "env": {
+        "CLAUDE_CLI_PATH": "/home/alin/.local/bin/claude",
+        "CLAUDE_WORK_DIR": "/home/alin/claude-pro-writer"
+      },
+      "description": "Claude Code agent-in-agent for Pro Romanian writing"
+    }
+  }
+}

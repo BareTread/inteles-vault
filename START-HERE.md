@@ -1,157 +1,376 @@
-# 🚀 START HERE — AI Writer Agent
+# 🚀 START HERE - Production Agent System
 
-**Site:** inteles.ro | **Focus:** Dream interpretation & meanings (Romanian)
-**Traffic:** 13,100/month | **Mobile:** 97.5% | **Target Quality Score:** ≥70/100
-
----
-
-## 🎯 STEP 1: Load This File First
-
-**For Writing Articles:** → **[[AI-AGENT-WORKFLOW|AI-AGENT-WORKFLOW.md]]** ← **GO HERE NOW**
-
-This is your complete, linear, foolproof workflow:
-- 9 numbered steps from task → published article
-- No ambiguity, no decisions, inevitable success
-- Product selection in 10 seconds
-- Quality check built in
-- Link2 auto-tracking (100% guaranteed)
-
-**Everything you need is in that one file.**
+**Status:** ✅ AGENT-IN-AGENT MCP WORKING!  
+**Date:** 2025-11-03  
+**System:** Intelligent orchestration with Claude Pro writer
 
 ---
 
-## 📚 For Understanding Philosophy (Optional)
+## ⚡ Quick Start
 
-If you want to understand WHY this system works (not required for writing):
+### First Time Setup
+```bash
+cd /home/alin/DATA/OBSIDIAN/inteles-vault
+chmod +x setup-agent-in-agent.sh
+./setup-agent-in-agent.sh
+```
 
-**Read:** `SOP.md` — Philosophy-driven guide (552 lines, teaches HOW TO THINK)
+### Daily Workflow
+```bash
+cd /home/alin/DATA/OBSIDIAN/inteles-vault
+claude
 
-**Key insights:**
-- €5,000/month = 1-2 links max, not 15 links
-- Quality > quantity (proven strategy)
-- Mobile-first (97.5% traffic)
-- Trust = long-term revenue
+# Verify MCP servers
+/mcp
 
-**But for writing articles, skip this and go straight to AI-AGENT-WORKFLOW.md**
-
----
-
-## ⚡ Quick Start (30 Seconds)
-
-1. **Task received?** → Open `AI-AGENT-WORKFLOW.md`
-2. **Follow steps 1-9** → Linear workflow, no branching
-3. **Publish** → Success guaranteed if you followed steps
-4. **Done** → That's it
-
-**No context loading overhead. No decision paralysis. Just execute.**
+# Write article (one command)
+@research-orchestrator Write article about "Ce înseamnă când visezi șerpi"
+```
 
 ---
 
-## 🎯 Core Principles (Critical!)
+## 📚 Essential Documentation
 
-### Content Quality
-1. **User-first** — Answer genuinely, no manipulation
-2. **Evidence-based** — Cite credible sources (WHO, Wikipedia-RO)
-3. **Professional tone** — No spam, no aggressive sales
-4. **Mobile-optimized** — Short paragraphs, frequent H2/H3
-5. **Romanian context** — Cultural relevance for diaspora
-
-### Monetization (€5,000/Month Proven Strategy)
-
-**The Discovery:** 1 link > 15 links
-
-**DO:**
-- ✅ Max 1 product per article (proven €5,000/month strategy)
-- ✅ Search merchant website, paste product URL
-- ✅ Link2 auto-converts to affiliate link (100% tracking)
-- ✅ Place AFTER content, BEFORE FAQ
-- ✅ ANPC disclosure: "Link afiliat — câștigăm un mic comision fără costuri pentru tine"
-
-**DON'T:**
-- ❌ Multiple products (lower conversion + trust damage)
-- ❌ Pre-generated affiliate links (just paste regular URLs)
-- ❌ Product placement before delivering value
-
-### SEO Strategy
-1. **Comprehensive** — 2,000-2,500 words
-2. **Quick answer** — First 2-3 paragraphs satisfy intent
-3. **Deep content** — Jung/Freud psychology, cultural context
-4. **FAQ schema** — 6+ questions with schema.org markup
-5. **Internal links** — 1-2 relevant articles
-6. **Credible sources** — 1-2 external (WHO, Wikipedia-RO)
+| File | Purpose |
+|------|---------|
+| **`FINAL-SOLUTION-SUMMARY.md`** | ⭐ Read this first - the breakthrough |
+| **`00-AGENT-CONTEXT/AGENTS-FINAL-INTELLIGENT.md`** | ⭐ Agent prompts - copy to create agents |
+| **`QUICK-START-AGENT-IN-AGENT.md`** | Daily workflow reference |
+| **`SOLUTION-AGENT-IN-AGENT.md`** | Technical deep dive |
+| **`SOP.md`** | Content philosophy |
+| **`AGENTS.md`** | Coding guidelines |
 
 ---
 
-## 🎬 Ready to Write?
+## 🎯 The 5 Intelligent Agents
 
-**→ Go to [[AI-AGENT-WORKFLOW|AI-AGENT-WORKFLOW.md]] now**
+### 1. Research-Orchestrator ⭐
+**Access:** Perplexity MCP + Claude Code Writer MCP  
+**Intelligence:**
+- 3-4 targeted Perplexity queries (psychology + SEO gaps + culture + practical)
+- Synthesizes specific insights (not generic)
+- Builds ONE perfect prompt with all research embedded
+- Calls Claude Pro writer via MCP
+- Returns compact JSON (no article reposting)
 
-Complete 9-step workflow with:
-- Article structure templates
-- Product selection (10 seconds)
-- Resource box HTML
-- FAQ schema markup
-- Quality checklist
-- Everything you need in one file
+### 2. Monetization-Specialist
+**Access:** Product catalog + URL verification  
+**Intelligence:**
+- Reads MASTER-PRODUCTS-LIST intelligently
+- Matches by theme, not just keywords
+- Verifies all URLs live with curl
+- Max 2-3 products, diverse merchants
+- Returns verified products + HTML box
 
----
+### 3. Image-Curator  
+**Access:** Pexels MCP  
+**Intelligence:**
+- Searches with psychology keywords (English)
+- Selects for visual consistency
+- Generates Romanian alt text with diacritics
+- Includes photographer credit
+- Suggests strategic placement
 
-## 📁 Key Files Reference
+### 4. Kadence-Block-Engineer
+**Access:** Templates  
+**Intelligence:**
+- Converts markdown → WordPress Kadence blocks
+- Inserts images at strategic points
+- Adds affiliate box before FAQ
+- Proper schema.org markup for FAQ
+- Mobile-optimized HTML
 
-| File | Purpose | When to Load |
-|------|---------|--------------|
-| **AI-AGENT-WORKFLOW.md** | Complete linear workflow (Steps 1-9) | ⭐ FOR WRITING ARTICLES |
-| **04-Monetization/AI-AGENT-QUICK-PICKS.md** | Product selection (10 sec) | Loaded in workflow Step 3 |
-| **00-AGENT-CONTEXT/02-WRITING-RUBRIC.md** | Quality checklist (score ≥7/10) | Loaded in workflow Step 7 |
-| **07-Templates/TPL-Vis-Interpretare.md** | Dream template | Loaded in workflow Step 2 |
-| **07-Templates/TPL-Ce-Inseamna.md** | Definition template | Loaded in workflow Step 2 |
-| **SOP.md** | Philosophy guide (optional reading) | For understanding WHY |
-| **03-MCP-Operations/** | WordPress/Pexels integration | If MCP available |
-
-**DO NOT LOAD:** `11-Source-Docs/*` (bloat), `history.md`, full MASTER-PRODUCTS-LIST
-
----
-
-## ✅ Success Checklist (Built into AI-AGENT-WORKFLOW)
-
-If you followed AI-AGENT-WORKFLOW Steps 1-9, you'll have:
-
-- [ ] Quality score ≥70/100 (Step 7)
-- [ ] Quick answer in first 2-3 paragraphs (Step 4)
-- [ ] 1 contextual product from Quick Picks (Step 3)
-- [ ] Regular URL pasted (Link2 auto-converts) (Step 5)
-- [ ] Resource box AFTER content, BEFORE FAQ (Step 5)
-- [ ] 6+ FAQ with schema.org markup (Step 6)
-- [ ] Romanian diacritics throughout (Step 4)
-- [ ] No AI filler phrases (Step 4)
-- [ ] Credible sources cited (Step 4)
-
-**Workflow guarantees success → Just follow the steps**
-
----
-
-## 🚨 How to Fail (Avoid These)
-
-1. **Skipping AI-AGENT-WORKFLOW** → Just follow the 9 steps!
-2. **Loading 11-Source-Docs/ files** → Token bloat, outdated info
-3. **Using manual 2Performant quicklinks** → Use regular URLs + Link2
-4. **Adding multiple products** → 1 product = €5,000/month proven
-5. **Missing quality check (Step 7)** → Must score ≥70/100
-6. **Skipping product selection (Step 3)** → 10 seconds, maximum revenue
-7. **Not using templates (Step 2)** → Consistency = quality
+### 5. WordPress-Publisher
+**Access:** WordPress MCP  
+**Intelligence:**
+- Checks for existing posts (idempotent)
+- Uploads images with Romanian metadata
+- Sets category 5 automatically
+- Updates or creates as needed
+- Returns live URL
 
 ---
 
-## 💡 Quick Wins
+## 🔥 Why This Works
 
-- **Highest revenue:** Energy/morning topics → Manuka honey (18%)
-- **Default safe pick:** Any dream article → Libris homepage (8%)
-- **Credibility boost:** Cite Jung/Freud (pre-loaded in templates)
-- **Mobile optimization:** 2-3 sentences per paragraph max
-- **FAQ SEO:** Answer "Este bun sau rău?", "Ce să fac?"
+### The Breakthrough
+**Community MCP server** (`steipete/claude-code-mcp`) exposes `claude_code` tool:
+- Takes prompt → spawns Claude CLI → returns LLM text
+- Claude CLI uses **Pro subscription** (no API billing)
+- Fully automated, no manual steps
+
+### Architecture
+```
+GLM Orchestrator (cheap API tokens)
+    ↓
+Research-Orchestrator
+├─ Perplexity research (3-4 queries)
+├─ Build intelligent prompt
+└─ Call @claude-code-writer MCP
+    ↓
+    Claude Pro (Pro subscription)
+    Generates Romanian article
+    ↓
+    Returns Markdown to GLM
+    ↓
+[Parallel: Monetization + Images]
+    ↓
+Kadence Blocks
+    ↓
+WordPress Publish
+```
+
+### Cost Per Article
+- Claude Pro: ~8K tokens → **$0 (subscription)**
+- GLM: ~16K tokens → **~$0.04-0.05**
+- **Total:** ~$0.04-0.05 per article
+
+### Capacity
+- **10-15 articles/day** within Pro limits
+- **Batch:** 5 articles in 60-75 minutes
+- **Quality:** Native Romanian, SEO-optimized
 
 ---
 
-**Last Updated:** 2025-11-02
-**System:** Inevitable Success Workflow (AI-AGENT-WORKFLOW.md)
-**Monetization:** Link2 Plugin + Quick Picks (100% tracking guaranteed)
+## 📋 Critical Rules
+
+### Romanian Quality (Non-Negotiable)
+✓ Diacritice: ă, î, â, ș, ț (pe tot)  
+✓ Paragrafe scurte: 2-3 propoziții max  
+✓ Quick answer în primele 2-3 paragrafe  
+✓ Ton: empatic, profesional, tu form  
+
+### Structure (SEO-Optimized)
+✓ H2/H3 la fiecare 300-400 cuvinte  
+✓ FAQ: minim 6 întrebări cu schema  
+✓ Imagini: 2-3 cu alt text românesc  
+✓ Lungime: 900-1200 cuvinte (no hard limit, let Claude decide)
+
+### Monetization (Proven Formula)
+✓ Max 2-3 produse afiliate  
+✓ Disclosure: "Link afiliat — câștigăm un mic comision fără costuri pentru tine"  
+✓ rel="nofollow sponsored noopener"  
+✓ Plasare naturală, nu forțată
+
+### AI Tells (Zero Tolerance)
+❌ "În concluzie, putem spune..."  
+❌ "Este important de menționat..."  
+❌ "delve", "utilize", "it's important to note"  
+❌ Em-dashes excesive  
+
+---
+
+## 🎓 Quality Scoring (Target: 8+/10)
+
+1. **Intent Match** - Quick answer first  
+2. **Depth** - Real psychological insights  
+3. **Structure** - H2/H3, scurte paragrafe  
+4. **Length** - 900-1200w, no filler  
+5. **Mobile** - Easy scanning  
+6. **Credibility** - Cite sources  
+7. **Language** - Perfect diacritics  
+8. **Value** - Genuinely helpful  
+9. **SEO** - Natural keywords  
+10. **Polish** - No errors  
+
+---
+
+## 🚀 Complete Workflow Example
+
+```
+Task: "Ce înseamnă când visezi șerpi"
+
+Step 1: Start GLM in vault
+$ cd /home/alin/DATA/OBSIDIAN/inteles-vault
+$ claude
+
+Step 2: Call research-orchestrator
+> @research-orchestrator Write comprehensive article about "Ce înseamnă când visezi șerpi - Interpretare psihologică"
+
+[Agent executes automatically:]
+
+2a) Perplexity research:
+- Query 1: "snake dreams Jung Freud psychology symbolism"
+- Query 2: "Romanian dream interpretation snake serpent culture"
+- Query 3: "snake dreams SEO content gaps competitors"
+- Query 4: "snake symbolism practical psychology therapeutic"
+
+2b) Synthesize insights:
+- Jung: snake = transformation, healing, primordial energy
+- Freud: sexual symbolism, repressed desires
+- Romanian culture: snake = wisdom, danger, warning
+- SEO gap: lack of practical therapeutic approaches
+- PAA questions identified: 6+ common questions
+
+2c) Build intelligent prompt:
+"Citește /home/alin/claude-pro-writer/romanian-style.md + avoid.md
+
+Scrie articol 1000+ cuvinte: 'Ce înseamnă când visezi șerpi'
+
+PERSPECTIVE PSIHOLOGICĂ:
+- Jung: șarpele simbolizează transformare și energia vitală primordială
+- În mitologie universală: înțelepciune, vindecare, reînnoire
+- Context emoțional crucial: teamă vs fascinație
+
+UNGHIURI UNICE:
+- Leg ătura cu procesul de individuare (Jung)
+- Diferența dintre șarpe negru (inconștient) și șarpe verde (vindecare)
+- Context românesc: credințe populare vs interpretare modernă
+
+STRUCTURĂ:
+1. Intro + quick answer (2-3 paragrafe)
+2. Semnificație psihologică (Jung/Freud)
+3. Scenarii comune (negru, verde, care mușcă, șarpe mort)
+4. Context românesc
+5. Când să cauți ajutor profesional
+6. FAQ (6+ întrebări)
+7. Concluzie acționabilă
+
+REGULI:
+✓ Diacritice pe tot
+✓ Paragrafe 2-3 propoziții
+✓ H2/H3 la 300-400w
+✓ Zero AI tells
+✓ Ton empatic, tu form
+✓ Quick answer FIRST
+
+OUTPUT: Doar Markdown, nimic altceva.
+---
+Excerpt: [25-35 cuvinte]
+Keywords: [listă]
+---"
+
+2d) Call Claude Pro writer via MCP:
+{
+  "prompt": "[intelligent prompt above]",
+  "workFolder": "/home/alin/claude-pro-writer"
+}
+
+2e) Receive article:
+Article returned in Markdown with perfect Romanian
+
+2f) Extract & pass forward (compact JSON):
+{
+  "article_markdown": "# Title\n\n[full article]",
+  "excerpt": "...",
+  "keywords": ["vise", "șerpi", ...],
+  "slug": "ce-inseamna-cand-visezi-serpi"
+}
+
+Step 3: Parallel processing (automatic)
+
+3a) Monetization:
+- Finds "Omul și simbolurile sale" (Jung) - Libris 8%
+- Finds "Interpretarea viselor" (Freud) - Bookzone 8%
+- Verifies URLs live
+- Builds HTML affiliate box
+
+3b) Images:
+- Searches Pexels: "snake symbolic", "dream psychology"
+- Selects 3 consistent images
+- Generates Romanian alt text
+- Maps placement points
+
+Step 4: Assemble Kadence blocks
+- Converts markdown to Kadence HTML
+- Inserts hero image after title
+- Places 2 inline images strategically
+- Adds affiliate box before FAQ
+- FAQ with schema.org markup
+
+Step 5: Publish to WordPress
+- Uploads 3 images with Romanian metadata
+- Creates post in category 5
+- Sets featured image
+- Status: publish
+
+Done! Live at: https://inteles.ro/ce-inseamna-cand-visezi-serpi
+
+Time: ~15-20 minutes
+Cost: ~$0.04
+Quality: Native Romanian, SEO-ready
+```
+
+---
+
+## 🔧 Troubleshooting
+
+### "MCP not connected"
+```bash
+/mcp  # Check status
+# If claude-code-writer shows stopped, restart session
+```
+
+### "No diacritics"
+Add to prompt: "MANDATORY: ă, î, â, ș, ț pe tot textul"
+
+### "Text looks fake"
+Wrong MCP server. Check `.mcp.json`:
+- ✅ GOOD: `"command": "node", "args": ["/home/alin/claude-code-mcp/build/index.js"]`
+- ❌ BAD: `"command": "claude", "args": ["mcp", "serve"]`
+
+---
+
+## 📊 Key Resources
+
+### Content Context
+- **Philosophy:** `SOP.md`
+- **Style Rules:** `00-AGENT-CONTEXT/07-STYLE-GUARDRAILS.md`
+- **SEO Rubric:** `00-AGENT-CONTEXT/04-SEO-RUBRIC.md`
+- **Writing Rubric:** `00-AGENT-CONTEXT/02-WRITING-RUBRIC.md`
+
+### Operations
+- **Products:** `04-Monetization/MASTER-PRODUCTS-LIST.md`
+- **Pexels:** `03-MCP-Operations/MCP-Pexels-Workflow.md`
+- **WordPress:** `03-MCP-Operations/MCP-WordPress-Guide.md`
+
+### Templates
+- **HTML Templates:** `07-Templates/`
+- **Article Brief:** `00-AGENT-CONTEXT/06-ARTICLE-BRIEF-TEMPLATE.md`
+
+---
+
+## 💡 Pro Tips
+
+### Token Optimization
+- Research-orchestrator returns compact JSON only
+- Don't repost full articles in chat
+- Use `/reset` between large batches
+
+### Quality Optimization
+- Track which SEO angles convert best
+- Iterate on research-orchestrator prompts
+- Maintain product list (verify quarterly)
+
+### Batch Processing
+1. Research 5 topics → save briefs
+2. Write all 5 (parallel MCP calls possible)
+3. Process monetization/images bulk
+4. Assemble all blocks
+5. Publish batch
+
+**Time:** ~60-75 min for 5 articles
+
+---
+
+## ✅ You're Ready!
+
+**Setup complete?**
+- [x] Ran `setup-agent-in-agent.sh`
+- [x] MCP test successful (Romanian sentence worked)
+- [ ] Created 5 agents from `AGENTS-FINAL-INTELLIGENT.md`
+- [ ] Wrote first test article
+
+**Next:** Copy agent prompts and create them in Global Claude:
+```bash
+claude  # Global instance
+/agents  # Create new agent
+# Copy prompt from AGENTS-FINAL-INTELLIGENT.md
+```
+
+Then move to vault:
+```bash
+cp ~/.claude/agents/*.json /home/alin/DATA/OBSIDIAN/inteles-vault/.claude/agents/
+```
+
+**You're ready to scale to 10-15 articles/day!** 🚀

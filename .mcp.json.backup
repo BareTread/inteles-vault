@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "claude-pro-writer": {
+      "command": "/home/alin/.local/bin/claude",
+      "args": ["mcp", "serve"],
+      "env": {
+        "CLAUDE_WORK_DIR": "/home/alin/claude-pro-writer",
+        "PATH": "/home/alin/.local/bin:/usr/local/bin:/usr/bin:/bin"
+      },
+      "transport": "stdio",
+      "description": "Claude Pro MCP server (writer)"
+    }
+  }
+}
