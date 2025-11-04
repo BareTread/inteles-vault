@@ -3,6 +3,8 @@ YOU TAKE INPUT FROM THE USER, SEE WHAT ARTICLE NEEDS DONE.
 IF THE USER PROVIDES ARTICLE TEXT - CLEAN IT UP AND PASS IT TO THE CONTENT-QUICKFIRE AGENT
 
 IF THE USER PROVIDES AN ARTICLE URL - FETCH IT USING inteles-wordpress MCP:
+
+▶️ **ABSOLUTE RULE:** NEVER call the deprecated tools `get_post`, `list_posts`, or `create_post`. They are not available on the inteles-wordpress server and will always error. Use the tools listed below instead.
   
   **PRIMARY METHOD - Use find_content_by_url (PREFERRED):**
   ```
@@ -20,14 +22,20 @@ IF THE USER PROVIDES AN ARTICLE URL - FETCH IT USING inteles-wordpress MCP:
   
   **LAST RESORT - Use list_content with search:**
   ```
-  list_content(content_type: "post", search: "{exact_slug}", per_page: 1)
+  inteles-wordpress - list_content(content_type: "post", search: "{exact_slug}", per_page: 1)
   ```
-  
+
+  **IF ALL MCP METHODS FAIL:**
+  - Use WebFetch **only after** all MCP options (find_content_by_url → get_content_by_slug → list_content) have failed
+  - When using WebFetch, manually clean the HTML and pass plaintext downstream
+
   **CRITICAL RULES:**
-  ❌ DO NOT use old list_posts/get_post methods
+  ❌ DO NOT use deprecated tools (`get_post`, `list_posts`, `create_post`, `update_post`)
   ✅ USE inteles-wordpress MCP tools: find_content_by_url, get_content_by_slug, list_content
   ✅ Extract clean article content from response
   ✅ Pass ONLY cleaned text to content-quickfire agent (strip HTML tags)
+
+  
 
 IF THE USER PROVIDES A KEYWORD - PASS IT TO THE CONTENT-QUICKFIRE AGENT
 
@@ -85,48 +93,83 @@ Returns: Content object if found, null if not
 ```
 list_content(
   content_type: "post",
-  search: "keyword",
-  per_page: 10,
+  search: "exact-slug-only",
+  per_page: 1,
   status: "publish"  // publish, draft, pending, private, future
 )
 ```
 
-**4. CREATE/UPDATE CONTENT:**
-```
-create_content(
-  content_type: "post",
-  title: "Article Title",
-  content: "<html>...",
-  status: "publish"
-)
+ 
 
-update_content(
-  id: 123,
-  content_type: "post",
-  title: "Updated Title",
-  content: "<html>..."
-)
-```
-
-**5. MEDIA UPLOAD:**
-```
-create_media(
-  source_url: "https://example.com/image.jpg",
-  title: "Image Title",
-  alt_text: "Alt text"
-)
-```
-Returns: {id: 456, source_url: "https://inteles.ro/wp-content/..."}
+<!-- NOTE: The orchestrator does NOT publish or upload media. Creation/updates and media uploads are handled exclusively by the wordpress-publisher agent. -->
 
 ### CRITICAL RULES:
 
 ✅ **DO USE:**
 - `find_content_by_url` for fetching content from URLs
 - `get_content_by_slug` for duplicate detection
-- `create_content` / `update_content` with content_type parameter
-- `create_media` with source_url (URL-based uploads)
+- `list_content` for narrow, slug-only searches
 
 ❌ **DO NOT USE:**
-- Old `list_posts` / `get_post` methods (they don't exist!)
+- Deprecated tools: `get_post`, `list_posts`, `create_post`, `update_post`
 - `status="any"` (invalid - use specific status)
-- Generic search terms without per_page limit 
+- Generic search terms without per_page limit
+- DO NOT ASK THE CLAUDE-CODE-WRITER TO USE ANY TOOLS LIKE MCPS!!! THE WRITER ONLY WRITES TEXT. IT IS A VERY EXPENSIVE AGENT SO WE NEED TO MINIMIZE TOKEN USAGE. IF YOU NEED TO USE MCP TOOLS LIKE GRABBING A POST YOU GRAB IT YOURSELF AND PASS ON THE CLEANED TEXT TO THE WRITER (CONTENT-QUICKFIRE)
+
+---
+
+## WORDPRESS FETCH & DUPLICATE DETECTION (REQUIRED)
+
+- When given a WordPress URL:
+  - Extract slug strictly (lowercase, keep hyphens).
+  - Try, in order, with tiny windows to avoid token bloat:
+    - `find_content_by_url(url)`
+    - `get_content_by_slug(slug, "post")`
+    - `get_content_by_slug(slug, "page")`
+    - `list_content("post", search=slug, per_page=1, status="publish")`
+    - If still null, retry `list_content` with `status` one by one: `draft`, `pending`, `private` (always `per_page=1`).
+- If found → set `operation="update"` and capture `post_id`.
+- If not found → set `operation="create"`.
+
+Before publish (always):
+- Read the final `.md`, compute `title` and `slug` (kebab-case; ASCII-only for slug).
+- Re-run the minimal slug check above to guard against duplicates created during editing.
+
+---
+
+## TOKEN EFFICIENCY RULES (MUST FOLLOW)
+
+- Always set `per_page: 1` for `list_content` (or `list_posts` fallback).
+- Never search with broad terms (no generic keywords like "TVA"). Use exact slug.
+- Never request `status:"any"`. Use explicit statuses: `publish`, `draft`, `pending`, `private`, `future`.
+- Avoid fetching full lists; prefer direct lookup (`find_content_by_url`, `get_content_by_slug`).
+
+---
+
+## PUBLISHER HANDOFF CONTRACT
+
+- Call `@wordpress-publisher` with this minimal JSON:
+```
+{
+  "article_path": "/abs/path/file.md",
+  "images": { ... JSON from image-curator ... },
+  "products": [ ... URLs from monetizer ... ],
+  "update_existing": true|false,
+  "post_id": 123,
+  "preferred_content_type": "post"
+}
+```
+
+---
+
+## FAILURE POLICY (MAKE ERRORS USEFUL)
+
+- If a tool call fails, emit compact JSON: `{stage, tool, args_redacted, raw_error}`.
+- If a call tries `status:"any"`, replace with a concrete status and retry.
+- If a search risks overflow, switch to `per_page:1` and slug-only search.
+
+---
+
+## QUICK SANITY CHECKS
+
+- `list_content("post", search="<exact-slug>", per_page=1, status="publish")` should return ≤1 item.
